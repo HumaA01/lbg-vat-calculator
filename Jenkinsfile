@@ -10,7 +10,7 @@ pipeline{
         }
         stage('SonarQube Analysis') {
             environment {
-                scannerHome = tool 'somarqube'
+                scannerHome = tool 'sonarqube'
             }
             steps{
                 withSonarQubeEnv('sonar-qube-huma'){
